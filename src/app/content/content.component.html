@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Main Navbar</ion-title>
+  </ion-navbar>
+  <ion-toolbar *ngIf="showToolbar">
+    <ion-title>Dynamic Toolbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <button ion-button (click)="toggleToolbar()">Toggle Toolbar</button>
+</ion-content>

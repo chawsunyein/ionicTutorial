@@ -1,0 +1,10 @@
+<ion-content>
+<ion-virtual-scroll [items]="items" [headerFn]="myHeaderFn">
+  <ion-item-divider *virtualHeader="let header">
+    {{ header }}
+  </ion-item-divider>
+  <ion-item *virtualItem="let item">
+    Item: {{ item }}
+  </ion-item>
+</ion-virtual-scroll>
+</ion-content>
